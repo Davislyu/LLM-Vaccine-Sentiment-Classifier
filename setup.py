@@ -12,5 +12,6 @@ setup(
         'torch',
         'transformers',
         'tqdm',
+        "scikit-learn"
     ],
 )
