@@ -13,5 +13,6 @@ setup(
         'transformers',
         'tqdm',
         "scikit-learn"
+        "xgboost"
     ],
 )
