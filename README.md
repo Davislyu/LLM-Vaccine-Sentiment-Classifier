@@ -1,7 +1,7 @@
 
 # LLM-Vaccine-Sentiment-Classifier
 
-This project aims to classify Twitter posts regarding COVID-19 vaccines into supportive, opposed, or irrelevant categories using various machine learning models including Naive Bayes, Random Forest, and XGBoost. The project leverages embedding models such as CityBird (CT-BERT) and Sentence-BERT (SBERT) for feature extraction.
+This project aims to classify Twitter posts regarding COVID-19 vaccines into supportive, opposed, or irrelevant categories using various machine learning models including Naive Bayes, Random Forest, and XGBoost. The project leverages embedding models such as COVID-Twitter-BERT (CT-BERT) and Sentence-BERT (SBERT) for feature extraction.
 
 ## Project Structure
 
@@ -33,7 +33,7 @@ The data used in this project is stored in an Excel file located at `data/proces
 
 ### CT-BERT
 
-CityBird (CT-BERT) is a transformer-based model fine-tuned specifically for COVID-19 related text. It provides contextual embeddings that capture the nuances of language used in tweets about COVID-19 vaccines. You can find the CT-BERT model on Hugging Face [here](https://huggingface.co/digitalepidemiologylab/covid-twitter-bert).
+COVID-Twitter-BERT (CT-BERT) is a transformer-based model fine-tuned specifically for COVID-19 related text. It provides contextual embeddings that capture the nuances of language used in tweets about COVID-19 vaccines. You can find the CT-BERT model on Hugging Face [here](https://huggingface.co/digitalepidemiologylab/covid-twitter-bert).
 
 ### SBERT
 
