@@ -46,129 +46,129 @@ Sentence-BERT (SBERT) is a modification of BERT that uses siamese and triplet ne
 
 The Naive Bayes classifier achieved the following performance metrics:
 
-- **Accuracy**: 0.8024
-- **Macro F1-score**: 0.7924
-- **Micro F1-score**: 0.8024
+- **Accuracy**: 0.7107
+- **Macro F1-score**: 0.7067
+- **Micro F1-score**: 0.7107
 
 ### Random Forest
 
 The Random Forest classifier achieved the following performance metrics:
 
-- **Accuracy**: 0.8193
-- **Macro F1-score**: 0.8098
-- **Micro F1-score**: 0.8193
+- **Accuracy**: 0.7619
+- **Macro F1-score**: 0.7573
+- **Micro F1-score**: 0.7619
 
 ### XGBoost
 
 The XGBoost classifier achieved the following performance metrics:
 
-- **Accuracy**: 0.8224
-- **Macro F1-score**: 0.8140
-- **Micro F1-score**: 0.8224
+- **Accuracy**: 0.7862
+- **Macro F1-score**: 0.7843
+- **Micro F1-score**: 0.7862
 
 ### Ensemble Voting Classifier
 
 The Ensemble Voting classifier achieved the following performance metrics:
 
-- **Accuracy**: 0.8254
-- **Macro F1-score**: 0.8159
-- **Micro F1-score**: 0.8254
+- **Accuracy**: 0.7655
+- **Macro F1-score**: 0.7622
+- **Micro F1-score**: 0.7655
 
 ## Cross-Validation Results
 
 ### Naive Bayes
 
 - **10-Fold Cross-Validation Macro F1-scores**: 
-  - 0.768991710852176
-  - 0.7767794585842744
-  - 0.7925819534723044
-  - 0.8250161015451783
-  - 0.7957712553620482
-  - 0.832956450956451
-  - 0.7407991820402785
-  - 0.8247175793394281
-  - 0.801288206703993
-  - 0.7608739247280377
-- **Mean Macro F1-score**: 0.791977582358417
+  - 0.6869506146908032
+  - 0.7057253862391563
+  - 0.7082123843455866
+  - 0.7154541095017644
+  - 0.7081590134676249
+  - 0.7506295938657551
+  - 0.6943318608661774
+  - 0.7183845466880182
+  - 0.7140522779181637
+  - 0.7203213011698221
+- **Mean Macro F1-score**: 0.7122221088752871
 
 ### Random Forest
 
 - **10-Fold Cross-Validation Macro F1-scores**: 
-  - 0.8016892373644198
-  - 0.8187189425561519
-  - 0.8014392324093818
-  - 0.8393489396828683
-  - 0.8325971808982157
-  - 0.835821418559013
-  - 0.7952306108635274
-  - 0.8330482461861054
-  - 0.7890355086526175
-  - 0.7970890698640917
-- **Mean Macro F1-score**: 0.8144018387036391
+  - 0.7500277601221228
+  - 0.7672225972178861
+  - 0.7544733193993615
+  - 0.7493114200049827
+  - 0.7716516421431496
+  - 0.7954943356032286
+  - 0.7452530546208895
+  - 0.7401998053484454
+  - 0.764328231292517
+  - 0.758727175921576
+- **Mean Macro F1-score**: 0.7596689341674159
 
 ### XGBoost
 
 - **10-Fold Cross-Validation Macro F1-scores**: 
-  - 0.8158351289039313
-  - 0.8027214995626185
-  - 0.8366675147290064
-  - 0.8468542539310316
-  - 0.8385612468671679
-  - 0.838825601816941
-  - 0.8114670209805276
-  - 0.8473403533069915
-  - 0.7960239716268959
-  - 0.8091030789825971
-- **Mean Macro F1-score**: 0.824339967070771
+  - 0.779121962706227
+  - 0.7883579530836989
+  - 0.7806530126618464
+  - 0.7721074197750838
+  - 0.7973539872921398
+  - 0.8246499105628962
+  - 0.7850879434342879
+  - 0.8210243046034328
+  - 0.7978669817097942
+  - 0.814729786451319
+- **Mean Macro F1-score**: 0.7960953262280726
 
 ### Ensemble Voting Classifier
 
 - **10-Fold Cross-Validation Macro F1-scores**: 
-  - 0.8008516264294615
-  - 0.808682753164557
-  - 0.8055989341265416
-  - 0.8535025132591328
-  - 0.840007215007215
-  - 0.8448675394922859
-  - 0.8012656322498534
-  - 0.8458656995486251
-  - 0.7983264290553684
-  - 0.786758953517907
-- **Mean Macro F1-score**: 0.8185727295850947
+  - 0.7464253325564107
+  - 0.7780922279139973
+  - 0.755819448010008
+  - 0.7567971660892505
+  - 0.7762816890430445
+  - 0.8039189027258297
+  - 0.7502319668747216
+  - 0.7691881495649714
+  - 0.7726332069466385
+  - 0.7768332848978009
+- **Mean Macro F1-score**: 0.7686221374622674
 
 ### Summary of Results:
 - **Naive Bayes**:
-  - **Mean Macro F1-score**: 0.791977582358417
+  - **Mean Macro F1-score**: 0.7122
 
 - **Random Forest**:
-  - **Mean Macro F1-score**: 0.8144018387036391
+  - **Mean Macro F1-score**: 0.7597
 
 - **XGBoost**:
-  - **Mean Macro F1-score**: 0.824339967070771
+  - **Mean Macro F1-score**: 0.7961
 
 - **Ensemble Voting**:
-  - **Mean Macro F1-score**: 0.8185727295850947
+  - **Mean Macro F1-score**: 0.7686
 
 ### Interpretation:
-- **XGBoost** performed the best among the individual classifiers, achieving a high mean Macro F1-score of 0.8243.
-- The **Ensemble Voting Classifier** performed well with a mean Macro F1-score of 0.8186.
-- **Random Forest** and **Naive Bayes** followed with mean Macro F1-scores of 0.8144 and 0.7920, respectively.
+- **XGBoost** performed the best among the individual classifiers, achieving a high mean Macro F1-score of 0.7961.
+- The **Ensemble Voting Classifier** performed well with a mean Macro F1-score of 0.7686.
+- **Random Forest** and **Naive Bayes** followed with mean Macro F1-scores of 0.7597 and 0.7122, respectively.
 
 ### Detailed Results:
 | Model                 | Accuracy | Macro F1-score | Micro F1-score |
 |-----------------------|----------|----------------|----------------|
-| Naive Bayes           | 0.8024   | 0.7924         | 0.8024         |
-| Random Forest         | 0.8193   | 0.8098         | 0.8193         |
-| XGBoost               | 0.8224   | 0.8140         | 0.8224         |
-| Ensemble Voting       | 0.8254   | 0.8159         | 0.8254         |
+| Naive Bayes           | 0.7107   | 0.7067         | 0.7107         |
+| Random Forest         | 0.7619   | 0.7573         | 0.7619         |
+| XGBoost               | 0.7862   | 0.7843         | 0.7862         |
+| Ensemble Voting       | 0.7655   | 0.7622         | 0.7655         |
 
 ### 10-Fold Cross-Validation Results:
 | Model           | Fold 1 | Fold 2 | Fold 3 | Fold 4 | Fold 5 | Fold 6 | Fold 7 | Fold 8 | Fold 9 | Fold 10 | Mean Macro F1-score |
 |-----------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|---------|---------------------|
-| Naive Bayes     | 0.7690 | 0.7768 | 0.7926 | 0.8250 | 0.7958 | 0.8330 | 0.7408 | 0.8247 | 0.8013 | 0.7609  | 0.7920              |
-| Random Forest   | 0.8017 | 0.8187 | 0.8014 | 0.8393 | 0.8326 | 0.8358 | 0.7952 | 0.8330 | 0.7890 | 0.7971  | 0.8144              |
-| XGBoost         | 0.8158 | 0.8027 | 0.8367 | 0.8469 | 0.8386 | 0.8388 | 0.8115 | 0.8473 | 0.7960 | 0.8091  | 0.8243              |
-| Ensemble Voting | 0.8009 | 0.8087 | 0.8056 | 0.8535 | 0.8400 | 0.8449 | 0.8013 | 0.8459 | 0.7983 | 0.7868  | 0.8186              |
+| Naive Bayes     | 0.6870 | 0.7057 | 0.7082 | 0.7155 | 0.7082 | 0.7506 | 0.6943 | 0.7184 | 0.7141 | 0.7203  | 0.7122              |
+| Random Forest   | 0.7500 | 0.7672 | 0.7545 | 0.7493 | 0.7717 | 0.7955 | 0.7453 | 0.7402 | 0.7643 | 0.7587  | 0.7597              |
+| XGBoost         | 0.7791 | 0.7884 | 0.7807 | 0.7721 | 0.7974 | 0.8246 | 0.7851 | 0.8210 | 0.7979 | 0.8147  | 0.7961              |
+| Ensemble Voting | 0.7464 | 0.7781 | 0.7558 | 0.7568 | 0.7763 | 0.8039 | 0.7502 | 0.7692 | 0.7726 | 0.7768  | 0.7686              |
 
 ## Installation
 
