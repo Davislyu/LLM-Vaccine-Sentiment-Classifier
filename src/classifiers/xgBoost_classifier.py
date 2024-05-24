@@ -43,8 +43,19 @@ accuracy = xgb_classifier.score(X_test, y_test)
 macro_f1 = f1_score(y_test, y_pred, average='macro')
 micro_f1 = f1_score(y_test, y_pred, average='micro')
 
+
+
+
 print(f"Accuracy: {accuracy}")
+
 print(f"Macro F1-score: {macro_f1}")
+
+
+
+
+
+
+
 print(f"Micro F1-score: {micro_f1}")
 
 y_test = y_test + 1
