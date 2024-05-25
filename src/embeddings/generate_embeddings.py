@@ -35,22 +35,17 @@ def get_ctbert_embeddings(texts, model, tokenizer, batch_size=32):
             mean_embeddings = outputs.last_hidden_state.mean(dim=1)
             all_embeddings.append(mean_embeddings)
 
-    # Concatenate all embeddings into one tensor
     return torch.cat(all_embeddings, dim=0)
 
-# Function to get embeddings from SBERT
 def get_sbert_embeddings(texts, model, tokenizer, batch_size=32):
     model.eval()  # Set the model to evaluation mode
     all_embeddings = []
 
-    # Calculate the number of batches needed based on the size of the texts and batch size
     num_batches = (len(texts) + batch_size - 1) // batch_size
 
-    # Process each batch of texts
     for i in tqdm(range(num_batches), desc="Processing texts with SBERT"):
         batch_texts = texts[i * batch_size : (i + 1) * batch_size]
 
-        # Tokenize the batch of texts
         inputs = tokenizer(
             batch_texts,
             return_tensors="pt",
@@ -59,18 +54,14 @@ def get_sbert_embeddings(texts, model, tokenizer, batch_size=32):
             max_length=300,
         )
 
-        # Compute embeddings without calculating gradients (to prevent unnecessary updates)
         with torch.no_grad():  
             outputs = model(**inputs)
-            # Calculate the mean embedding across all words in the text
             mean_embeddings = outputs.last_hidden_state.mean(dim=1)
             all_embeddings.append(mean_embeddings)
 
     return torch.cat(all_embeddings, dim=0)
 
-# Function to generate embeddings from both models and save them to an Excel file
 def generate_embeddings(input_file, output_file):
-    # Load the tokenizers and models for CT-BERT and SBERT
     tokenizer_ct = AutoTokenizer.from_pretrained("digitalepidemiologylab/covid-twitter-bert")
     model_ct = AutoModel.from_pretrained("digitalepidemiologylab/covid-twitter-bert")
     
