@@ -1,4 +1,3 @@
-
 # LLM-Vaccine-Sentiment-Classifier
 
 This project aims to classify Twitter posts regarding COVID-19 vaccines into supportive, opposed, or irrelevant categories using various machine learning models including Naive Bayes, Random Forest, and XGBoost. The project leverages embedding models such as COVID-Twitter-BERT (CT-BERT) and Sentence-BERT (SBERT) for feature extraction.
@@ -88,7 +87,7 @@ The Ensemble Voting classifier achieved the following performance metrics:
   - 0.6943318608661774
   - 0.7183845466880182
   - 0.7140522779181637
-  - 0.7203213011698221
+  - 0.7203213011698222
 - **Mean Macro F1-score**: 0.7122221088752871
 
 ### Random Forest
