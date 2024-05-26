@@ -77,7 +77,7 @@ The Ensemble Voting classifier achieved the following performance metrics:
 
 ### Naive Bayes
 
-- **10-Fold Cross-Validation Macro F1-scores**: 
+- **10-Fold Cross-Validation Macro F1-scores**:
   - 0.6869506146908032
   - 0.7057253862391563
   - 0.7082123843455866
@@ -92,7 +92,7 @@ The Ensemble Voting classifier achieved the following performance metrics:
 
 ### Random Forest
 
-- **10-Fold Cross-Validation Macro F1-scores**: 
+- **10-Fold Cross-Validation Macro F1-scores**:
   - 0.7500277601221228
   - 0.7672225972178861
   - 0.7544733193993615
@@ -107,7 +107,7 @@ The Ensemble Voting classifier achieved the following performance metrics:
 
 ### XGBoost
 
-- **10-Fold Cross-Validation Macro F1-scores**: 
+- **10-Fold Cross-Validation Macro F1-scores**:
   - 0.779121962706227
   - 0.7883579530836989
   - 0.7806530126618464
@@ -122,7 +122,7 @@ The Ensemble Voting classifier achieved the following performance metrics:
 
 ### Ensemble Voting Classifier
 
-- **10-Fold Cross-Validation Macro F1-scores**: 
+- **10-Fold Cross-Validation Macro F1-scores**:
   - 0.7464253325564107
   - 0.7780922279139973
   - 0.755819448010008
@@ -136,34 +136,41 @@ The Ensemble Voting classifier achieved the following performance metrics:
 - **Mean Macro F1-score**: 0.7686221374622674
 
 ### Summary of Results:
+
 - **Naive Bayes**:
+
   - **Mean Macro F1-score**: 0.7122
 
 - **Random Forest**:
+
   - **Mean Macro F1-score**: 0.7597
 
 - **XGBoost**:
+
   - **Mean Macro F1-score**: 0.7961
 
 - **Ensemble Voting**:
   - **Mean Macro F1-score**: 0.7686
 
 ### Interpretation:
+
 - **XGBoost** performed the best among the individual classifiers, achieving a high mean Macro F1-score of 0.7961.
 - The **Ensemble Voting Classifier** performed well with a mean Macro F1-score of 0.7686.
 - **Random Forest** and **Naive Bayes** followed with mean Macro F1-scores of 0.7597 and 0.7122, respectively.
 
 ### Detailed Results:
-| Model                 | Accuracy | Macro F1-score | Micro F1-score |
-|-----------------------|----------|----------------|----------------|
-| Naive Bayes           | 0.7107   | 0.7067         | 0.7107         |
-| Random Forest         | 0.7619   | 0.7573         | 0.7619         |
-| XGBoost               | 0.7862   | 0.7843         | 0.7862         |
-| Ensemble Voting       | 0.7655   | 0.7622         | 0.7655         |
+
+| Model           | Accuracy | Macro F1-score | Micro F1-score |
+| --------------- | -------- | -------------- | -------------- |
+| Naive Bayes     | 0.7107   | 0.7067         | 0.7107         |
+| Random Forest   | 0.7619   | 0.7573         | 0.7619         |
+| XGBoost         | 0.7862   | 0.7843         | 0.7862         |
+| Ensemble Voting | 0.7655   | 0.7622         | 0.7655         |
 
 ### 10-Fold Cross-Validation Results:
+
 | Model           | Fold 1 | Fold 2 | Fold 3 | Fold 4 | Fold 5 | Fold 6 | Fold 7 | Fold 8 | Fold 9 | Fold 10 | Mean Macro F1-score |
-|-----------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|---------|---------------------|
+| --------------- | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------ | ------- | ------------------- |
 | Naive Bayes     | 0.6870 | 0.7057 | 0.7082 | 0.7155 | 0.7082 | 0.7506 | 0.6943 | 0.7184 | 0.7141 | 0.7203  | 0.7122              |
 | Random Forest   | 0.7500 | 0.7672 | 0.7545 | 0.7493 | 0.7717 | 0.7955 | 0.7453 | 0.7402 | 0.7643 | 0.7587  | 0.7597              |
 | XGBoost         | 0.7791 | 0.7884 | 0.7807 | 0.7721 | 0.7974 | 0.8246 | 0.7851 | 0.8210 | 0.7979 | 0.8147  | 0.7961              |
@@ -202,6 +209,7 @@ To run the XGBoost classifier, execute the following command:
 ```bash
 python src/classifiers/xgboost_classifier.py
 ```
+
 ### XGBoost Classifier
 
 To run the voting ensable classifier, execute the following command:
