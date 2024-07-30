@@ -28,10 +28,9 @@ def get_ctbert_embeddings(texts, model, tokenizer, batch_size=32):
             max_length=300,
         )
 
-        # Compute embeddings without calculating gradients (to prevent unnecessary updates)
         with torch.no_grad():  
             outputs = model(**inputs)
-            # Calculate the mean embedding across all words in the text
+            # Calculate the mean embedding 
             mean_embeddings = outputs.last_hidden_state.mean(dim=1)
             all_embeddings.append(mean_embeddings)
 
